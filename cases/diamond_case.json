@@ -1,0 +1,187 @@
+{
+  "id": "diamond_case",
+  "order": 1,
+  "title": "O Sumiço da Estrela de Minas",
+  "difficulty": "iniciante",
+  "public": {
+    "introduction": "Na noite de 14 de março, durante um jantar na Mansão Varela, o diamante azul 'Estrela de Minas' desapareceu do cofre da biblioteca. Dona Helena Varela, a proprietária, guardou a pedra às 21h00 e descobriu o sumiço às 22h40. O cofre não foi arrombado. Quatro pessoas estavam na mansão naquela noite e são suspeitas.",
+    "location": "Mansão Varela, Petrópolis",
+    "date": "14 de março, entre 21h00 e 22h40",
+    "suspects": [
+      {
+        "id": "otavio",
+        "name": "Otávio Varela",
+        "description": "Sobrinho de Dona Helena, 29 anos. Conhecido por perder dinheiro em apostas.",
+        "relationship": "Herdeiro em potencial da família.",
+        "shoe_size": "44"
+      },
+      {
+        "id": "clara",
+        "name": "Clara Mendes",
+        "description": "Secretária particular de Dona Helena há 6 anos. Conhece a combinação do cofre.",
+        "relationship": "Funcionária de confiança.",
+        "shoe_size": "36"
+      },
+      {
+        "id": "rui",
+        "name": "Rui Batista",
+        "description": "Mordomo da família há 20 anos. Extremamente rigoroso com as regras da casa.",
+        "relationship": "Funcionário mais antigo da mansão.",
+        "shoe_size": "40"
+      },
+      {
+        "id": "lemos",
+        "name": "Dr. Augusto Lemos",
+        "description": "Joalheiro convidado para avaliar o diamante na tarde do mesmo dia.",
+        "relationship": "Convidado de Dona Helena.",
+        "shoe_size": "42"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "name": "Cofre intacto",
+        "description": "O cofre da biblioteca foi aberto com a combinação correta. Não há nenhuma marca de arrombamento."
+      },
+      {
+        "id": "E2",
+        "name": "Janela destrancada",
+        "description": "O trinco da janela da biblioteca, que dá para o jardim, estava aberto. Não há marcas de arrombamento na janela."
+      },
+      {
+        "id": "E3",
+        "name": "Pegadas de lama",
+        "description": "Pegadas de sapato social, tamanho 42, sujas de lama molhada, vão da janela da biblioteca até o cofre e voltam."
+      },
+      {
+        "id": "E4",
+        "name": "Guarda-chuva molhado",
+        "description": "Um guarda-chuva preto, ainda molhado, foi encontrado atrás da cortina da biblioteca. O cabo tem as iniciais 'A.L.' gravadas."
+      },
+      {
+        "id": "E5",
+        "name": "Registro da cooperativa de táxi",
+        "description": "A cooperativa informa que uma corrida para o endereço da mansão foi solicitada às 21h10 em nome de 'A. Lemos'. O passageiro embarcou no portão da mansão às 22h05."
+      },
+      {
+        "id": "E6",
+        "name": "Boletim meteorológico",
+        "description": "Uma chuva forte começou em Petrópolis às 21h40 e durou até a meia-noite. Antes disso, o tempo estava seco."
+      },
+      {
+        "id": "E7",
+        "name": "Bilhete de cobrança",
+        "description": "No paletó de Otávio foi encontrado um bilhete: 'Você tem até o fim do mês para pagar os 50 mil. Não me faça ir buscar.'"
+      },
+      {
+        "id": "E8",
+        "name": "Xícara de chá",
+        "description": "No quarto de Clara havia uma bandeja com uma xícara de chá de camomila vazia e um comprimido para enxaqueca."
+      }
+    ],
+    "testimonies": [
+      {
+        "person": "Dona Helena Varela (vítima)",
+        "suspect_id": null,
+        "text": "À tarde, por volta das 17h, abri o cofre na frente do Dr. Lemos para que ele avaliasse a pedra. Depois do jantar mostrei o diamante aos convidados e o guardei no cofre às 21h00. Às 22h10 meu sobrinho Otávio voltou do jardim, encharcado, e ficou comigo na sala de estar até eu ir à biblioteca, às 22h40, e perceber que o cofre estava vazio."
+      },
+      {
+        "person": "Otávio Varela",
+        "suspect_id": "otavio",
+        "text": "Saí para fumar no jardim às 21h30 com o seu Jorge, o jardineiro. Quando a chuva começou, nos abrigamos no gazebo. Voltei para dentro às 22h10 e fiquei com a minha tia. Sim, tenho dívidas, mas eu jamais roubaria a minha própria família."
+      },
+      {
+        "person": "Jorge (jardineiro, testemunha)",
+        "suspect_id": null,
+        "text": "O seu Otávio ficou comigo no gazebo o tempo todo, das 21h30 até umas 22h10. Lá pelas 21h50 vi um vulto com guarda-chuva perto da ala da biblioteca. Estava escuro e chovendo, achei que fosse o seu Rui fazendo a ronda."
+      },
+      {
+        "person": "Clara Mendes",
+        "suspect_id": "clara",
+        "text": "Tive uma crise de enxaqueca e fui para o meu quarto às 21h00. Não saí de lá até ouvir a gritaria. Por volta das 21h50 o Rui me levou um chá de camomila, e logo depois eu dormi."
+      },
+      {
+        "person": "Rui Batista",
+        "suspect_id": "rui",
+        "text": "Fiquei na sala de jantar das 21h30 às 22h15 servindo café e licor, não saí de lá em nenhum momento. À tarde, ao passar pelo corredor, ouvi o Dr. Lemos ao telefone dizendo: 'até sexta eu resolvo tudo, prometo'."
+      },
+      {
+        "person": "Dr. Augusto Lemos",
+        "suspect_id": "lemos",
+        "text": "Terminei a avaliação à tarde e jantei com a família. Fui embora às 21h15, de táxi, antes de começar a chover, e segui direto para o meu hotel. Não sei nada sobre o que aconteceu depois disso."
+      }
+    ],
+    "timeline": [
+      { "time": "17h00", "event": "Dona Helena abre o cofre na biblioteca para o Dr. Lemos avaliar o diamante." },
+      { "time": "19h30", "event": "Início do jantar com todos os presentes." },
+      { "time": "21h00", "event": "Dona Helena guarda o diamante no cofre. Clara vai para o quarto." },
+      { "time": "21h10", "event": "Corrida de táxi solicitada em nome de 'A. Lemos' (registro da cooperativa)." },
+      { "time": "21h30", "event": "Otávio vai fumar no jardim com o jardineiro Jorge." },
+      { "time": "21h40", "event": "Começa a chover forte." },
+      { "time": "21h50", "event": "Jorge vê um vulto com guarda-chuva perto da biblioteca. Clara diz ter recebido chá do Rui." },
+      { "time": "22h05", "event": "Passageiro embarca no táxi no portão da mansão (registro da cooperativa)." },
+      { "time": "22h10", "event": "Otávio volta para dentro e fica com Dona Helena." },
+      { "time": "22h40", "event": "Dona Helena descobre que o cofre está vazio." }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "lemos",
+      "culprit_aliases": ["Augusto Lemos", "Lemos", "Augusto", "joalheiro", "A.L."],
+      "motive": "A joalheria do Dr. Lemos estava à beira da falência. Ele tinha dívidas a pagar até sexta-feira (telefonema ouvido por Rui).",
+      "means": "Memorizou a combinação quando Dona Helena abriu o cofre na frente dele às 17h e destrancou o trinco da janela da biblioteca durante a avaliação.",
+      "opportunity": "Pediu o táxi às 21h10 e fingiu ir embora às 21h15, mas ficou escondido no jardim. Depois que a chuva começou (21h40), entrou pela janela, abriu o cofre, deixou o guarda-chuva para trás na pressa e embarcou no táxi às 22h05.",
+      "key_evidence": ["E3", "E4", "E5", "E6"],
+      "min_key_evidence": 2,
+      "explanation": "O roubo aconteceu depois das 21h40, pois as pegadas estão molhadas de lama e a chuva só começou nesse horário. Otávio tem álibi confirmado pelo jardineiro e por Dona Helena. Clara e Rui calçam números diferentes de 42. O Dr. Lemos diz que saiu às 21h15, antes da chuva, mas o táxi só o buscou às 22h05 e o guarda-chuva com as iniciais dele estava molhado dentro da biblioteca. Ele calça 42, viu a combinação do cofre e tinha motivo financeiro."
+    },
+    "contradictions": [
+      {
+        "id": "C1",
+        "description": "Dr. Lemos diz que saiu às 21h15, mas o táxi registrado em seu nome só embarcou o passageiro às 22h05.",
+        "involves": ["lemos", "E5"],
+        "relevant": true
+      },
+      {
+        "id": "C2",
+        "description": "Dr. Lemos diz que saiu antes da chuva, mas o guarda-chuva com as iniciais 'A.L.' estava molhado dentro da biblioteca, e a chuva só começou às 21h40.",
+        "involves": ["lemos", "E4", "E6"],
+        "relevant": true
+      },
+      {
+        "id": "C3",
+        "description": "Rui diz que não saiu da sala de jantar entre 21h30 e 22h15, mas Clara afirma que ele levou chá ao quarto dela por volta das 21h50.",
+        "involves": ["rui", "clara", "E8"],
+        "relevant": false,
+        "note": "Pista falsa: Rui mentiu por ter quebrado a regra de não deixar a sala de jantar durante o serviço. Nem toda contradição indica culpa."
+      },
+      {
+        "id": "C4",
+        "description": "As pegadas de lama são tamanho 42, número que só o Dr. Lemos calça entre os suspeitos.",
+        "involves": ["lemos", "E3"],
+        "relevant": true
+      },
+      {
+        "id": "C5",
+        "description": "Otávio tem motivo forte (dívida de 50 mil, E7), mas seu álibi é confirmado pelo jardineiro e por Dona Helena durante toda a janela do crime.",
+        "involves": ["otavio", "E7"],
+        "relevant": false,
+        "note": "Pista falsa: motivo não é prova. O álibi elimina Otávio."
+      }
+    ],
+    "hints": [
+      {
+        "level": 1,
+        "text": "Todo bom investigador começa delimitando a janela de tempo do crime. Existe alguma evidência que mostre que o roubo aconteceu depois de um certo horário, e não logo às 21h00?"
+      },
+      {
+        "level": 2,
+        "text": "As pegadas estão molhadas de lama e o boletim meteorológico diz quando a chuva começou. Compare esse horário com onde cada suspeito afirma estar e verifique quem tem álibi confirmado por outra pessoa."
+      },
+      {
+        "level": 3,
+        "text": "Leia de novo o registro da cooperativa de táxi e observe o guarda-chuva encontrado na biblioteca. O que esses dois objetos dizem sobre o horário real em que alguém deixou a mansão?"
+      }
+    ]
+  }
+}

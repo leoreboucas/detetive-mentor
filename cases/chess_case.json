@@ -1,0 +1,176 @@
+{
+  "id": "chess_case",
+  "order": 3,
+  "title": "Xeque-Mate no Clube Bandeirante",
+  "difficulty": "difícil",
+  "public": {
+    "introduction": "Na final do torneio do Clube Bandeirante de Xadrez, em 12 de setembro, o grande mestre Ivo Castellani foi encontrado morto no salão de leitura durante a pausa da partida. A perícia confirmou envenenamento por cianeto. A xícara de chá de Ivo, deixada na mesa de jogo, tinha resíduos do veneno. Quatro pessoas são suspeitas.",
+    "location": "Clube Bandeirante de Xadrez, São Paulo",
+    "date": "12 de setembro, pausa da partida a partir das 15h40",
+    "suspects": [
+      {
+        "id": "raul",
+        "name": "Raul Teixeira",
+        "description": "Adversário de Ivo na final. Foi acusado publicamente por Ivo de trapacear em torneios anteriores.",
+        "relationship": "Rival declarado.",
+        "shoe_size": "43"
+      },
+      {
+        "id": "nadia",
+        "name": "Nádia Castellani",
+        "description": "Ex-mulher de Ivo e árbitra principal do torneio. O divórcio, há dois anos, foi conturbado.",
+        "relationship": "Ex-esposa.",
+        "shoe_size": "37"
+      },
+      {
+        "id": "caio",
+        "name": "Caio Fontes",
+        "description": "Assistente de Ivo há cinco anos. Prepara as aberturas com ele e cuida de tudo durante as partidas.",
+        "relationship": "Assistente de confiança.",
+        "shoe_size": "41"
+      },
+      {
+        "id": "moura",
+        "name": "Sr. Moura",
+        "description": "Garçom do clube há 15 anos. Serviu o chá de Ivo durante a partida.",
+        "relationship": "Funcionário do clube.",
+        "shoe_size": "40"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "name": "Laudo toxicológico",
+        "description": "Envenenamento por cianeto. Os sintomas começam de 1 a 5 minutos após a ingestão e a morte vem em poucos minutos. Hora da morte: entre 15h45 e 15h50. Foram encontrados restos de uma bala de menta na boca da vítima."
+      },
+      {
+        "id": "E2",
+        "name": "Xícara de chá",
+        "description": "A xícara de Ivo, na mesa de jogo, estava vazia e com resíduo de cianeto no fundo. Tinha impressões digitais de Ivo e de Raul."
+      },
+      {
+        "id": "E3",
+        "name": "Gravação da transmissão",
+        "description": "15h10: Ivo esbarra na xícara; Raul a segura antes que caia e a devolve. 15h30: Ivo bebe o último gole de chá. Entre 15h30 e 15h40 ninguém toca na xícara. 15h40: a partida é pausada e Ivo segue para o salão de leitura. A câmera é desligada durante a pausa."
+      },
+      {
+        "id": "E4",
+        "name": "Latinha de balas",
+        "description": "Uma latinha de balas de menta foi encontrada na lixeira do salão de leitura. Restavam duas balas; uma delas tinha cianeto."
+      },
+      {
+        "id": "E5",
+        "name": "E-mail de Ivo",
+        "description": "Enviado a Nádia na véspera: 'Alguém da minha equipe está vendendo minhas preparações de abertura. Amanhã, depois da partida, vou resolver isso pessoalmente.'"
+      },
+      {
+        "id": "E6",
+        "name": "Extrato bancário de Caio",
+        "description": "Três depósitos de 15 mil reais nos últimos dois meses, feitos por uma empresa sem atividade conhecida."
+      },
+      {
+        "id": "E7",
+        "name": "Registro da arbitragem",
+        "description": "Das 15h40 às 15h54, Nádia atendeu na mesa da arbitragem três jogadores que reclamavam de um relógio defeituoso. O registro está assinado pelos três."
+      },
+      {
+        "id": "E8",
+        "name": "Vídeo da cerimônia de abertura",
+        "description": "No primeiro dia do torneio, Raul diz a Ivo, irritado: 'Você ainda vai se arrepender dessas acusações.'"
+      }
+    ],
+    "testimonies": [
+      {
+        "person": "Raul Teixeira",
+        "suspect_id": "raul",
+        "text": "Na pausa fiquei sozinho na mesa analisando a posição. O garçom passou por volta das 15h45 recolhendo xícaras de outras mesas. Lá pelas 15h52 o Caio entrou, foi direto à mesa e mexeu nas coisas do Ivo; disse que ia guardar a caneta dele. Segurei a xícara no começo da partida porque ela ia cair. E falei aquilo na abertura porque ele me acusou de trapaça, mas eu não matei ninguém."
+      },
+      {
+        "person": "Sr. Moura",
+        "suspect_id": "moura",
+        "text": "Às 15h45, quando recolhi as xícaras, só o Sr. Raul estava no salão, e ele não levantou da cadeira. Pouco antes da Dona Nádia gritar, vi o Sr. Caio na mesa do Sr. Ivo, mexendo nas coisas dele. A xícara do Sr. Ivo eu não recolhi; ele não gosta que mexam nas coisas dele."
+      },
+      {
+        "person": "Caio Fontes",
+        "suspect_id": "caio",
+        "text": "Na pausa fiquei no salão principal o tempo todo, vendo o Raul analisar a posição. O Ivo foi sozinho para o salão de leitura. As balas? Ele levava a latinha no bolso do paletó."
+      },
+      {
+        "person": "Nádia Castellani",
+        "suspect_id": "nadia",
+        "text": "A latinha sempre fica com o Caio. É uma superstição do Ivo: em toda pausa, o Caio entrega uma bala de menta para ele. Fiquei na arbitragem até as 15h54; depois fui chamar o Ivo para retomar a partida e o encontrei caído no salão de leitura."
+      }
+    ],
+    "timeline": [
+      { "time": "14h00", "event": "Início da partida final." },
+      { "time": "15h10", "event": "Ivo esbarra na xícara; Raul a segura e devolve." },
+      { "time": "15h30", "event": "Ivo bebe o último gole de chá." },
+      { "time": "15h40", "event": "Pausa. Ivo vai para o salão de leitura. A câmera é desligada." },
+      { "time": "15h45", "event": "Moura recolhe xícaras no salão principal." },
+      { "time": "15h45 a 15h50", "event": "Hora estimada da morte." },
+      { "time": "15h52", "event": "Caio é visto mexendo nas coisas de Ivo na mesa de jogo." },
+      { "time": "15h55", "event": "Nádia encontra Ivo morto no salão de leitura." }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "caio",
+      "culprit_aliases": ["Caio Fontes", "Caio", "Fontes", "assistente"],
+      "motive": "Caio vendia as preparações de abertura de Ivo (depósitos em E6). Ivo descobriu e ia confrontá-lo depois da partida (E5).",
+      "means": "Envenenou uma das balas de menta da latinha que ele mesmo guardava e entregou a Ivo na pausa.",
+      "opportunity": "Na pausa, foi ao salão de leitura e deu a bala a Ivo. Depois jogou a latinha no lixo e, por volta das 15h52, voltou à mesa de jogo e pôs cianeto na xícara vazia para incriminar Raul, cujas digitais estavam nela.",
+      "key_evidence": ["E1", "E3", "E4", "E5", "E6"],
+      "min_key_evidence": 3,
+      "explanation": "O cianeto age em poucos minutos (E1). Ivo bebeu o último gole às 15h30 e estava bem às 15h40 (E3); portanto o veneno foi posto na xícara depois, quando ela já estava vazia, e as digitais de Raul são das 15h10. O veículo real foi a bala de menta (E1, E4), e quem guardava a latinha era Caio, segundo Nádia, embora ele negue. Caio diz que ficou no salão principal, mas às 15h45 só Raul estava lá (Moura), e depois Caio foi visto mexendo na mesa de Ivo, momento em que envenenou a xícara. Nádia tem álibi assinado (E7). O motivo está no e-mail e nos depósitos (E5, E6)."
+    },
+    "contradictions": [
+      {
+        "id": "C1",
+        "description": "Caio diz que ficou no salão principal durante a pausa, mas Moura afirma que às 15h45 só Raul estava lá.",
+        "involves": ["caio", "moura"],
+        "relevant": true
+      },
+      {
+        "id": "C2",
+        "description": "Caio diz que Ivo carregava a latinha de balas, mas Nádia afirma que a latinha sempre ficava com Caio, que entregava uma bala a cada pausa.",
+        "involves": ["caio", "nadia", "E4"],
+        "relevant": true
+      },
+      {
+        "id": "C3",
+        "description": "A xícara envenenada tem as digitais de Raul, mas Ivo bebeu dela às 15h30 e continuou bem até as 15h40, o que é impossível com um veneno que age em minutos: a xícara foi envenenada depois, já vazia.",
+        "involves": ["raul", "E1", "E2", "E3"],
+        "relevant": true,
+        "note": "Descobrir isso elimina a principal prova contra Raul e mostra que alguém tentou incriminá-lo."
+      },
+      {
+        "id": "C4",
+        "description": "Raul ameaçou Ivo na abertura do torneio, mas ameaça não é prova e ele não tinha acesso às balas.",
+        "involves": ["raul", "E8"],
+        "relevant": false,
+        "note": "Pista falsa: motivo e ameaça não indicam o meio nem a oportunidade."
+      },
+      {
+        "id": "C5",
+        "description": "Nádia é a ex-mulher e encontrou o corpo, mas estava na arbitragem com três testemunhas das 15h40 às 15h54.",
+        "involves": ["nadia", "E7"],
+        "relevant": false,
+        "note": "Pista falsa: encontrar o corpo não torna ninguém suspeito; o álibi a elimina."
+      }
+    ],
+    "hints": [
+      {
+        "level": 1,
+        "text": "Antes de perguntar quem, pergunte como: qual foi de fato o veículo do veneno? Leia o laudo com atenção, principalmente o tempo que o cianeto leva para agir."
+      },
+      {
+        "level": 2,
+        "text": "Compare o horário do último gole de chá com o momento em que Ivo ainda estava bem. O que isso diz sobre a xícara? E o que mais o laudo encontrou?"
+      },
+      {
+        "level": 3,
+        "text": "Quem tinha a latinha de balas? Compare o que cada um diz sobre ela e sobre onde estava às 15h45. E quem mexeu na mesa de Ivo depois da pausa?"
+      }
+    ]
+  }
+}

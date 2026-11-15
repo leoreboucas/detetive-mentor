@@ -1,0 +1,185 @@
+{
+  "id": "painter_case",
+  "order": 5,
+  "title": "O Último Quadro de Matias Brandão",
+  "difficulty": "especialista",
+  "public": {
+    "introduction": "Na madrugada de 23 de janeiro, durante uma tempestade em Ilhabela, o pintor Matias Brandão foi morto em seu ateliê, na Casa da Ponta. Uma árvore caída bloqueou a estrada à 1h30, e ninguém entrou ou saiu da propriedade até a manhã. Ao lado do corpo havia uma letra 'L' pintada em azul no chão, com o pincel ainda na mão da vítima. Quatro pessoas dormiam na casa.",
+    "location": "Casa da Ponta, Ilhabela, litoral de São Paulo",
+    "date": "Madrugada de 23 de janeiro",
+    "suspects": [
+      {
+        "id": "rebeca",
+        "name": "Rebeca Sá",
+        "description": "Assistente de Matias há três anos. Mora na casa e cuida do ateliê, dos materiais e dos certificados das obras.",
+        "relationship": "Assistente e moradora.",
+        "shoe_size": "37"
+      },
+      {
+        "id": "dito",
+        "name": "Seu Dito",
+        "description": "Caseiro, 68 anos. Mora num quarto ao lado da cozinha e cuida de Tufão, o cão de guarda.",
+        "relationship": "Funcionário da casa há vinte anos.",
+        "shoe_size": "40"
+      },
+      {
+        "id": "lucia",
+        "name": "Lúcia Brandão",
+        "description": "Ex-mulher de Matias. Chegou na tarde anterior para tratar da venda de um apartamento do casal.",
+        "relationship": "Ex-esposa, visitante.",
+        "shoe_size": "36"
+      },
+      {
+        "id": "leandro",
+        "name": "Leandro Vaz",
+        "description": "Marchand que vende as obras de Matias em sua galeria. Chegou na tarde anterior, chamado com urgência pelo pintor.",
+        "relationship": "Marchand, visitante.",
+        "shoe_size": "42"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "name": "Laudo do legista",
+        "description": "Um único golpe na nuca, dado com uma escultura de bronze encontrada ao lado do corpo. A morte foi instantânea. Hora estimada: entre 1h30 e 3h."
+      },
+      {
+        "id": "E2",
+        "name": "A letra 'L'",
+        "description": "Uma letra 'L' pintada em tinta azul no chão, junto à mão direita da vítima, que segurava um pincel sujo da mesma tinta."
+      },
+      {
+        "id": "E3",
+        "name": "Registro da Defesa Civil",
+        "description": "Chamadas de rádio de Seu Dito entre 1h32 e 3h40, em intervalos de no máximo 10 minutos, relatando a árvore caída. Todas feitas do rádio fixo da casinha do portão, a 300 metros da casa, numa trilha que a chuva transformou em lamaçal: ida e volta levam cerca de 20 minutos."
+      },
+      {
+        "id": "E4",
+        "name": "O lençol",
+        "description": "O corpo foi encontrado coberto por um lençol. Seu Dito afirma que o cobriu às 7h05 e ficou na porta do ateliê, sem deixar ninguém entrar, até a polícia chegar às 7h40."
+      },
+      {
+        "id": "E5",
+        "name": "Anotações do primeiro policial (7h45)",
+        "description": "O policial informou a cada morador apenas que Matias tinha sido encontrado morto, sem dar detalhes. Primeiras reações anotadas. Lúcia: 'Meu Deus... como? Ele estava doente?' Leandro: 'Morto? Mas ontem ele estava ótimo!' Rebeca: 'Coitado... pelo menos foi rápido, ele nem viu quem o atacou.'"
+      },
+      {
+        "id": "E6",
+        "name": "Rascunho de carta de Matias",
+        "description": "Encontrado na escrivaninha, endereçado a Leandro: 'Descobri que cópias dos meus quadros estão sendo vendidas como originais pela sua galeria. Amanhã conversamos com calma. Já sei quem pintou as cópias.'"
+      },
+      {
+        "id": "E7",
+        "name": "Sapatos de Leandro",
+        "description": "Encontrados no quarto dele, molhados e com areia."
+      },
+      {
+        "id": "E8",
+        "name": "Registro telefônico de Leandro",
+        "description": "Uma ligação de 23h05 às 23h40, feita com sinal da antena do píer, que só pega na varanda da casa."
+      }
+    ],
+    "testimonies": [
+      {
+        "person": "Seu Dito",
+        "suspect_id": "dito",
+        "text": "O Tufão late para qualquer visita, de dia ou de noite, e dorme no corredor que liga os quartos ao ateliê. Ontem ele latiu às 23h, quando o Sr. Leandro saiu para a varanda; depois, silêncio a noite toda. Comigo e com a Dona Rebeca ele nunca late. Passei a madrugada na casinha do portão, falando com a Defesa Civil por causa da árvore. Às 7h fui levar café para o Seu Matias, vi ele caído pela porta de vidro, entrei, cobri com um lençol e não deixei ninguém entrar."
+      },
+      {
+        "person": "Lúcia Brandão",
+        "suspect_id": "lucia",
+        "text": "Cheguei ontem à tarde e aquele cachorro não parou de latir para mim. Fui dormir às 22h e só acordei com a polícia. O Matias e eu nos separamos em paz, vim só assinar papéis."
+      },
+      {
+        "person": "Leandro Vaz",
+        "suspect_id": "leandro",
+        "text": "Não saí do quarto a noite toda. Sobre as cópias: as obras que vendi vieram com certificados de autenticidade assinados pelo próprio Matias e entregues pela assistente dele. Se houve falsificação, eu fui enganado."
+      },
+      {
+        "person": "Rebeca Sá",
+        "suspect_id": "rebeca",
+        "text": "Dormi por volta das 23h30 e só acordei com o movimento da polícia. O Tufão dormiu no corredor como sempre. Aquele 'L' no chão... só pode ser a Lúcia ou o Leandro, não é? O Matias quis nos dizer quem foi."
+      }
+    ],
+    "timeline": [
+      { "time": "18h00", "event": "Lúcia e Leandro chegam à Casa da Ponta." },
+      { "time": "22h00", "event": "Lúcia diz ter ido dormir." },
+      { "time": "23h00", "event": "Tufão late quando Leandro sai para a varanda." },
+      { "time": "23h05 a 23h40", "event": "Ligação telefônica de Leandro." },
+      { "time": "23h30", "event": "Rebeca diz ter ido dormir." },
+      { "time": "1h30", "event": "Uma árvore cai e bloqueia a estrada." },
+      { "time": "1h30 a 3h00", "event": "Hora estimada da morte." },
+      { "time": "1h32 a 3h40", "event": "Chamadas de rádio de Seu Dito à Defesa Civil, da casinha do portão." },
+      { "time": "7h00", "event": "Seu Dito encontra o corpo." },
+      { "time": "7h05", "event": "Seu Dito cobre o corpo com um lençol." },
+      { "time": "7h40", "event": "A polícia chega." },
+      { "time": "7h45", "event": "O policial informa os moradores e anota as reações." }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "rebeca",
+      "culprit_aliases": ["Rebeca Sá", "Rebeca", "assistente"],
+      "motive": "Rebeca pintava as cópias e as vendia como originais pela galeria de Leandro, com certificados falsos. Matias descobriu (E6) e ia revelar tudo na manhã seguinte.",
+      "means": "Golpe com a escultura de bronze do ateliê. Depois pintou a letra 'L' e pôs o pincel na mão da vítima para incriminar os dois visitantes.",
+      "opportunity": "Passou pelo corredor durante a madrugada sem que Tufão latisse, porque o cão a conhece, enquanto Seu Dito estava preso ao rádio na casinha do portão.",
+      "key_evidence": ["E1", "E3", "E4", "E5", "E6"],
+      "min_key_evidence": 3,
+      "explanation": "A morte foi instantânea (E1): Matias não poderia ter escrito nada, então o 'L' foi plantado para incriminar Lúcia e Leandro (E2). O cão, que late para visitas de dia e de noite, latiu às 23h para Leandro e depois ficou em silêncio: nenhum visitante passou pelo corredor até o ateliê de madrugada. Restam os moradores. Seu Dito falou pelo rádio a cada 10 minutos entre 1h32 e 3h40, a 20 minutos de ida e volta da casa (E3). Rebeca não tem álibi e, sem ter visto o corpo, coberto desde as 7h05 (E4), sabia que a morte foi rápida e que a vítima foi atacada sem ver o agressor (E5). A carta de Matias aponta para a galeria de Leandro, mas os certificados das obras falsas eram entregues por Rebeca (E6 e depoimento de Leandro). A mentira de Leandro sobre não ter saído do quarto se explica pela ligação às 23h, bem antes do crime (E7, E8)."
+    },
+    "contradictions": [
+      {
+        "id": "C1",
+        "description": "A letra 'L' parece uma mensagem da vítima, mas a morte foi instantânea: Matias não poderia tê-la escrito. Alguém a plantou.",
+        "involves": ["E1", "E2"],
+        "relevant": true
+      },
+      {
+        "id": "C2",
+        "description": "O cão late para visitas mesmo à noite (latiu para Leandro às 23h), mas ficou em silêncio o resto da madrugada: quem foi ao ateliê é alguém que o cão conhece.",
+        "involves": ["dito", "rebeca", "lucia", "leandro"],
+        "relevant": true
+      },
+      {
+        "id": "C3",
+        "description": "Rebeca diz que dormiu a noite toda, mas sabia que a morte foi rápida e que a vítima não viu o agressor, embora o corpo estivesse coberto e o policial não tivesse dado detalhes.",
+        "involves": ["rebeca", "E4", "E5"],
+        "relevant": true
+      },
+      {
+        "id": "C4",
+        "description": "A carta de Matias aponta para a galeria de Leandro, mas os certificados das obras falsas eram entregues pela assistente, Rebeca.",
+        "involves": ["leandro", "rebeca", "E6"],
+        "relevant": true
+      },
+      {
+        "id": "C5",
+        "description": "Leandro diz que não saiu do quarto, mas o cão latiu para ele às 23h, os sapatos estavam molhados e ele fez uma ligação da varanda das 23h05 às 23h40.",
+        "involves": ["leandro", "E7", "E8"],
+        "relevant": false,
+        "note": "Pista falsa: Leandro mentiu sobre uma saída que terminou horas antes da hora da morte. Uma mentira não é, por si só, prova de culpa."
+      },
+      {
+        "id": "C6",
+        "description": "Lúcia, ex-mulher e com nome começando por L, parece apontada pela letra, mas a letra foi plantada e o cão não latiu para nenhum visitante de madrugada.",
+        "involves": ["lucia", "E2"],
+        "relevant": false,
+        "note": "Pista falsa: a mensagem foi feita para incriminar quem tem nome com L."
+      }
+    ],
+    "hints": [
+      {
+        "level": 1,
+        "text": "Antes de confiar na mensagem deixada no chão, pergunte-se: a vítima teria tido tempo de escrevê-la? O laudo responde."
+      },
+      {
+        "level": 2,
+        "text": "Uma testemunha falou naquela noite sem dizer uma palavra. Quem poderia passar pelo corredor de madrugada sem fazê-la reagir? E onde cada uma dessas pessoas estava?"
+      },
+      {
+        "level": 3,
+        "text": "Releia as primeiras reações anotadas pelo policial e lembre-se do lençol. Alguém sabia de um detalhe da morte que ninguém deveria saber."
+      }
+    ]
+  }
+}

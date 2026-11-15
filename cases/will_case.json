@@ -1,0 +1,192 @@
+{
+  "id": "will_case",
+  "order": 4,
+  "title": "O Testamento do Coronel Albuquerque",
+  "difficulty": "muito difícil",
+  "public": {
+    "introduction": "O Coronel Joaquim Albuquerque morreu de infarto em 3 de junho, na Fazenda Santa Rita, e o médico confirmou morte natural. O testamento oficial dividia tudo igualmente entre os três filhos. Uma semana depois, um testamento manuscrito, mais recente, apareceu na escrivaninha do Coronel, deixando a fazenda inteira para um só herdeiro. A família suspeita de falsificação. A pergunta não é quem matou, mas quem falsificou.",
+    "location": "Fazenda Santa Rita, sul de Minas Gerais",
+    "date": "Testamento encontrado em 10 de junho",
+    "suspects": [
+      {
+        "id": "rodrigo",
+        "name": "Rodrigo Albuquerque",
+        "description": "Filho mais velho. Administra a fazenda há quinze anos e mora nela.",
+        "relationship": "Filho e herdeiro.",
+        "shoe_size": "42"
+      },
+      {
+        "id": "helena",
+        "name": "Helena Albuquerque Reis",
+        "description": "Filha do meio, advogada em Belo Horizonte. Mãe de Sofia.",
+        "relationship": "Filha e herdeira.",
+        "shoe_size": "36"
+      },
+      {
+        "id": "paulo",
+        "name": "Paulo Albuquerque",
+        "description": "Filho caçula, mora em São Paulo. Foi ele quem encontrou o testamento manuscrito.",
+        "relationship": "Filho e herdeiro.",
+        "shoe_size": "41"
+      },
+      {
+        "id": "dirce",
+        "name": "Dirce Rocha",
+        "description": "Governanta da fazenda há trinta anos. Não é herdeira.",
+        "relationship": "Funcionária de confiança da família.",
+        "shoe_size": "37"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "name": "Testamento público de 2015",
+        "description": "Registrado em cartório: todos os bens divididos em partes iguais entre Rodrigo, Helena e Paulo."
+      },
+      {
+        "id": "E2",
+        "name": "Testamento manuscrito",
+        "description": "Datado de 10 de janeiro de 2022 e escrito com tinta verde. Deixa a fazenda inteira para Rodrigo; Helena e Paulo recebem apenas 'lembranças pessoais'. Trecho: 'à minha querida neta Sofia deixo o relógio de bolso do meu pai, que concerteza ela saberá guardar.'"
+      },
+      {
+        "id": "E3",
+        "name": "Prontuário médico",
+        "description": "O Coronel tinha Parkinson avançado desde 2020, com tremor intenso nas mãos. Desde 2021 não escrevia mais e só assinava documentos com ajuda."
+      },
+      {
+        "id": "E4",
+        "name": "Perícia preliminar da letra",
+        "description": "O testamento manuscrito tem traçado firme e regular, sem nenhum sinal de tremor."
+      },
+      {
+        "id": "E5",
+        "name": "Certidão de nascimento",
+        "description": "Sofia Albuquerque Reis, filha de Helena, nasceu em 14 de março de 2023."
+      },
+      {
+        "id": "E6",
+        "name": "Caneta-tinteiro verde",
+        "description": "Caneta-tinteiro de tinta verde, presente do Coronel para Rodrigo. Fica na escrivaninha do escritório, onde qualquer pessoa da casa tem acesso."
+      },
+      {
+        "id": "E7",
+        "name": "Passaporte de Rodrigo",
+        "description": "Carimbos de saída do Brasil em 1º de março de 2023 e de retorno em 30 de abril de 2023 (feira agropecuária em Portugal)."
+      },
+      {
+        "id": "E8",
+        "name": "Nota fiscal da papelaria",
+        "description": "Emitida em 5 de maio de 2023: refil de tinta azul para caneta-tinteiro, comprado por Dirce."
+      },
+      {
+        "id": "E9",
+        "name": "Amostras de escrita",
+        "description": "Bilhete de Rodrigo a Dirce: 'Com certeza volto para o almoço.' Cartão de Natal de Helena: 'Com certeza nos veremos em breve.' Bilhete de Paulo deixado na geladeira em abril de 2023: 'Dirce, concerteza volto sábado. Não precisa arrumar o quarto.' Lista de compras de Dirce, toda em letra de forma maiúscula."
+      },
+      {
+        "id": "E10",
+        "name": "Carta do banco",
+        "description": "Notificação a Paulo Albuquerque, de maio deste ano: dívida vencida de 800 mil reais, com ameaça de penhora."
+      }
+    ],
+    "testimonies": [
+      {
+        "person": "Paulo Albuquerque",
+        "suspect_id": "paulo",
+        "text": "Achei o testamento na gaveta da escrivaninha, procurando os documentos do meu pai. É óbvio que é falso: olhem a tinta verde, é a caneta do Rodrigo! Ele forjou isso para ficar com a fazenda. Exijo que ele seja excluído da herança."
+      },
+      {
+        "person": "Rodrigo Albuquerque",
+        "suspect_id": "rodrigo",
+        "text": "Nunca vi esse papel. A caneta é minha, mas fica na escrivaninha e qualquer um pode usar. Passei março e abril do ano passado em Portugal, na feira. Quando voltei, a tinta verde tinha acabado, e achei estranho porque eu tinha posto um cartucho novo antes de viajar. Pedi à Dirce que comprasse tinta azul."
+      },
+      {
+        "person": "Helena Albuquerque Reis",
+        "suspect_id": "helena",
+        "text": "Depois que a Sofia nasceu fiquei em Belo Horizonte, de licença-maternidade. Só voltei à fazenda em julho, para apresentá-la ao meu pai. Como advogada, digo uma coisa: se ficar provado que o Rodrigo falsificou o testamento, a lei o exclui da herança por indignidade, e a parte dele é dividida entre mim e o Paulo."
+      },
+      {
+        "person": "Dirce Rocha",
+        "suspect_id": "dirce",
+        "text": "O Seu Paulo passou a Semana Santa aqui, em abril do ano passado. Ficou quase duas semanas, quase sempre trancado no escritório, dizendo que estava organizando os papéis do pai. A Dona Helena só veio em julho, com a bebê. Eu só sei escrever em letra de forma, e herança não é coisa minha."
+      },
+      {
+        "person": "Dr. Álvaro Mendes (médico da família, testemunha)",
+        "suspect_id": null,
+        "text": "O Coronel tinha Parkinson avançado. Desde 2021 não conseguia escrever uma frase inteira; assinava com a mão apoiada pela Dirce."
+      }
+    ],
+    "timeline": [
+      { "time": "2015", "event": "Testamento público em cartório: divisão igual entre os três filhos." },
+      { "time": "2020", "event": "Diagnóstico de Parkinson avançado." },
+      { "time": "10/01/2022", "event": "Data escrita no testamento manuscrito." },
+      { "time": "01/03/2023", "event": "Rodrigo viaja para Portugal." },
+      { "time": "14/03/2023", "event": "Nasce Sofia, filha de Helena, em Belo Horizonte." },
+      { "time": "Abril de 2023", "event": "Paulo passa a Semana Santa na fazenda." },
+      { "time": "30/04/2023", "event": "Rodrigo volta de Portugal; a tinta verde da caneta acabou." },
+      { "time": "05/05/2023", "event": "Dirce compra refil de tinta azul." },
+      { "time": "Julho de 2023", "event": "Helena visita a fazenda com Sofia." },
+      { "time": "03/06 (este ano)", "event": "O Coronel morre de infarto." },
+      { "time": "10/06 (este ano)", "event": "Paulo encontra o testamento manuscrito." }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "paulo",
+      "culprit_aliases": ["Paulo Albuquerque", "Paulo", "caçula"],
+      "motive": "Paulo tinha uma dívida de 800 mil reais (E10). Um testamento falso a favor de Rodrigo, atribuído ao próprio Rodrigo, faria Rodrigo ser excluído da herança por indignidade, e a parte de Paulo subiria de um terço para metade.",
+      "means": "Usou a caneta verde de Rodrigo, que fica na escrivaninha, para que a falsificação apontasse para o irmão.",
+      "opportunity": "Escreveu o testamento em abril de 2023, durante a Semana Santa, trancado no escritório, enquanto Rodrigo estava em Portugal. Guardou o papel e o 'encontrou' depois da morte do pai.",
+      "key_evidence": ["E5", "E7", "E8", "E9", "E10"],
+      "min_key_evidence": 3,
+      "explanation": "O testamento é falso: a letra é firme (E4) e o Coronel não escrevia desde 2021 (E3). Ele menciona Sofia, nascida em março de 2023 (E5), então foi escrito depois dessa data, e não em 2022. Foi escrito com tinta verde, que acabou enquanto Rodrigo estava fora (E7, E8 e depoimento dele): a janela é de 14 de março a 30 de abril de 2023. Rodrigo estava em Portugal e Helena em Belo Horizonte; Dirce escreve só em letra de forma. Paulo estava na fazenda em abril, trancado no escritório, e o testamento repete o erro 'concerteza' do bilhete dele (E9). O beneficiário aparente, Rodrigo, é na verdade o alvo: se ele fosse acusado, perderia a herança, e Paulo, endividado (E10), ficaria com metade."
+    },
+    "contradictions": [
+      {
+        "id": "C1",
+        "description": "O testamento é datado de janeiro de 2022, mas cita a neta Sofia, que só nasceu em março de 2023.",
+        "involves": ["E2", "E5"],
+        "relevant": true
+      },
+      {
+        "id": "C2",
+        "description": "O testamento tem letra firme, mas o Coronel tinha Parkinson avançado e não escrevia desde 2021.",
+        "involves": ["E2", "E3", "E4"],
+        "relevant": true
+      },
+      {
+        "id": "C3",
+        "description": "A tinta verde aponta para Rodrigo, mas a tinta acabou justamente enquanto ele estava em Portugal: alguém usou a caneta na ausência dele.",
+        "involves": ["rodrigo", "E6", "E7", "E8"],
+        "relevant": true
+      },
+      {
+        "id": "C4",
+        "description": "O testamento repete o erro de escrita 'concerteza', que aparece no bilhete de Paulo; os outros escrevem 'com certeza'.",
+        "involves": ["paulo", "E2", "E9"],
+        "relevant": true
+      },
+      {
+        "id": "C5",
+        "description": "Rodrigo é o beneficiário do testamento falso, o que parece incriminá-lo, mas um falsificador descoberto perde a herança: quem ganha com a acusação são os outros herdeiros.",
+        "involves": ["rodrigo", "paulo"],
+        "relevant": false,
+        "note": "Pista falsa: 'quem se beneficia' precisa ser analisado até o fim. Aqui, o beneficiário aparente é o alvo da armação."
+      }
+    ],
+    "hints": [
+      {
+        "level": 1,
+        "text": "Primeiro prove que o testamento é falso. Depois descubra quando ele foi realmente escrito: há um detalhe no próprio texto que não poderia existir na data que está nele."
+      },
+      {
+        "level": 2,
+        "text": "A tinta verde ajuda a fechar a janela de tempo. Em que período alguém usou aquela caneta, e onde estava cada pessoa da família nesse intervalo?"
+      },
+      {
+        "level": 3,
+        "text": "Pergunte-se quem ganharia se Rodrigo fosse acusado de falsificação. Depois compare a escrita do testamento com os bilhetes de cada um."
+      }
+    ]
+  }
+}

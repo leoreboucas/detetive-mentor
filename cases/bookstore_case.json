@@ -1,0 +1,186 @@
+{
+  "id": "bookstore_case",
+  "order": 2,
+  "title": "O Apagão do Sebo Ventura",
+  "difficulty": "intermediário",
+  "public": {
+    "introduction": "Na noite de 18 de agosto, durante o lançamento de um livro no Sebo Ventura, a luz acabou por doze minutos. Quando voltou, a vitrine estava aberta e a primeira edição de 'Dom Casmurro', a peça mais valiosa da loja, tinha sumido. O livro não foi encontrado com nenhum convidado revistado na saída. Quatro pessoas são suspeitas.",
+    "location": "Sebo Ventura, centro de São Paulo",
+    "date": "18 de agosto, apagão das 19h48 às 20h00",
+    "suspects": [
+      {
+        "id": "marta",
+        "name": "Marta Siqueira",
+        "description": "Gerente do sebo há oito anos. É quem guarda a chave da vitrine.",
+        "relationship": "Braço direito de Seu Ventura.",
+        "shoe_size": "37"
+      },
+      {
+        "id": "henrique",
+        "name": "Henrique Assunção",
+        "description": "Colecionador de primeiras edições. Na semana anterior tentou comprar o livro e foi recusado.",
+        "relationship": "Cliente antigo e rival declarado de outros colecionadores.",
+        "shoe_size": "42"
+      },
+      {
+        "id": "bruno",
+        "name": "Bruno Takeda",
+        "description": "Estagiário, estudante de Letras. Naquela noite cuidava do caixa.",
+        "relationship": "Trabalha no sebo há quatro meses.",
+        "shoe_size": "41"
+      },
+      {
+        "id": "lia",
+        "name": "Lia Moreira",
+        "description": "Fotógrafa contratada para registrar o lançamento.",
+        "relationship": "Prestadora de serviço, primeira vez no sebo.",
+        "shoe_size": "36"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "name": "Vitrine aberta",
+        "description": "A porta de vidro da vitrine estava aberta, sem nenhuma marca de arrombamento. A chave da vitrine continuava no chaveiro de Marta."
+      },
+      {
+        "id": "E2",
+        "name": "Relatório de manutenção da vitrine",
+        "description": "Relatório de 10 dias antes: 'A fechadura de chave está quebrada desde julho, aguardando peça. A vitrine permanece fechada apenas pela trava eletromagnética, que se libera automaticamente em caso de falta de energia.' Assinaturas de ciência: Marta Siqueira e Bruno Takeda."
+      },
+      {
+        "id": "E3",
+        "name": "Resposta da concessionária de energia",
+        "description": "Enviada na manhã seguinte, às 10h: não houve nenhuma interrupção de energia no bairro na noite de 18 de agosto."
+      },
+      {
+        "id": "E4",
+        "name": "Quadro de disjuntores",
+        "description": "Fica no corredor dos fundos. A única passagem até ele é por trás do balcão do caixa. O disjuntor geral estava ligado quando a polícia chegou."
+      },
+      {
+        "id": "E5",
+        "name": "Fotos com flash durante o apagão",
+        "description": "Câmera de Lia, com horário automático. 19h52: mesa de autógrafos iluminada pelo flash, com a escritora Cecília e Marta segurando a lanterna do celular; ao fundo aparecem a vitrine fechada, com o livro dentro, e o balcão do caixa vazio. 19h56: Cecília autografando, Marta ao lado."
+      },
+      {
+        "id": "E6",
+        "name": "Foto das 20h01",
+        "description": "Logo depois de a luz voltar: Bruno atrás do caixa, Henrique ao lado da vitrine aberta apontando para ela, Seu Ventura caminhando na direção dos dois."
+      },
+      {
+        "id": "E7",
+        "name": "Cartão de visita na vitrine",
+        "description": "Um cartão de visita de Henrique Assunção foi encontrado dentro da vitrine vazia, no lugar onde o livro ficava."
+      },
+      {
+        "id": "E8",
+        "name": "Boletim de ocorrência (21h15)",
+        "description": "O policial anotou que, até aquele momento, todos acreditavam ter sido uma queda de energia na rua. Anotou também um comentário espontâneo de Bruno: 'Quem desligou o disjuntor sabia exatamente o que estava fazendo.'"
+      }
+    ],
+    "testimonies": [
+      {
+        "person": "Seu Ventura (dono do sebo)",
+        "suspect_id": null,
+        "text": "A vitrine fica trancada e só a Marta tem a chave. Quando a luz apagou, achei que fosse a rua toda; as cortinas estavam fechadas por causa da projeção de slides. O Henrique ficou ao meu lado, perto da janela, o apagão inteiro; segurou no meu braço porque não enxergava nada. Semana passada ele quis comprar o livro, eu recusei, e ele deixou um cartão no balcão com o Bruno, caso eu mudasse de ideia."
+      },
+      {
+        "person": "Marta Siqueira",
+        "suspect_id": "marta",
+        "text": "Fiquei na mesa de autógrafos segurando a lanterna do celular para a Cecília continuar assinando. Tenho a chave da vitrine, sim, mas ela não saiu do meu chaveiro a noite toda."
+      },
+      {
+        "person": "Henrique Assunção",
+        "suspect_id": "henrique",
+        "text": "Fiquei perto da janela com o Seu Ventura. Eu queria aquele livro, não nego, mas não sou ladrão. Aliás, semana passada o próprio estagiário me perguntou quanto eu pagaria por ele 'se estivesse à venda'. Quando a luz voltou, fui olhar a vitrine e ela estava aberta."
+      },
+      {
+        "person": "Bruno Takeda",
+        "suspect_id": "bruno",
+        "text": "Fiquei parado no caixa o tempo todo, estava um breu, não dava para dar um passo. Quando a luz voltou, vi a vitrine aberta e o Henrique do lado dela."
+      },
+      {
+        "person": "Lia Moreira",
+        "suspect_id": "lia",
+        "text": "Fotografei a mesa de autógrafos com flash durante o apagão, queria registrar o momento. Não saí de perto da mesa."
+      },
+      {
+        "person": "Cecília Prado (escritora, testemunha)",
+        "suspect_id": null,
+        "text": "A Marta segurou a lanterna para mim do começo ao fim do apagão. A Lia ficou do meu lado fotografando o tempo todo."
+      }
+    ],
+    "timeline": [
+      { "time": "19h00", "event": "Início do lançamento." },
+      { "time": "19h30", "event": "Começa a projeção de slides; as cortinas são fechadas." },
+      { "time": "19h48", "event": "A luz acaba." },
+      { "time": "19h52", "event": "Foto com flash: vitrine ainda fechada, com o livro; balcão do caixa vazio." },
+      { "time": "19h56", "event": "Foto com flash na mesa de autógrafos." },
+      { "time": "20h00", "event": "A luz volta. A vitrine está aberta e vazia." },
+      { "time": "20h01", "event": "Foto: Bruno no caixa, Henrique ao lado da vitrine." },
+      { "time": "21h15", "event": "Registro do boletim de ocorrência." },
+      { "time": "Dia seguinte, 10h", "event": "A concessionária informa que não houve queda de energia no bairro." }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "bruno",
+      "culprit_aliases": ["Bruno Takeda", "Bruno", "Takeda", "estagiário"],
+      "motive": "Bruno queria vender o livro: uma semana antes, sondou Henrique sobre quanto ele pagaria.",
+      "means": "Sabia, pelo relatório que assinou, que a fechadura estava quebrada e que a trava eletromagnética se solta sem energia. Tinha acesso exclusivo ao quadro de disjuntores, atrás do caixa.",
+      "opportunity": "Desligou o disjuntor geral às 19h48, pegou o livro entre 19h52 e 20h00, deixou dentro da vitrine o cartão que Henrique tinha deixado com ele, religou a energia e voltou ao caixa. Escondeu o livro no estoque.",
+      "key_evidence": ["E2", "E3", "E4", "E5", "E7", "E8"],
+      "min_key_evidence": 3,
+      "explanation": "Não houve queda no bairro (E3): alguém desligou o disjuntor, que só pode ser alcançado por trás do caixa (E4). A chave era irrelevante, porque a fechadura estava quebrada e a trava se solta sem energia (E2); só Marta e Bruno sabiam disso. A foto das 19h52 mostra o livro ainda na vitrine e o caixa vazio (E5), desmentindo Bruno, enquanto Marta e Lia estavam na mesa de autógrafos, confirmadas pelas fotos e por Cecília. Henrique estava segurando o braço de Seu Ventura. O cartão de Henrique na vitrine (E7) foi plantado: ele o tinha deixado justamente com Bruno. Por fim, às 21h15 Bruno já falava em disjuntor (E8), quando todos ainda achavam que tinha sido uma queda na rua."
+    },
+    "contradictions": [
+      {
+        "id": "C1",
+        "description": "Bruno diz que ficou parado no caixa o tempo todo, mas a foto com flash das 19h52 mostra o balcão do caixa vazio.",
+        "involves": ["bruno", "E5"],
+        "relevant": true
+      },
+      {
+        "id": "C2",
+        "description": "Às 21h15 Bruno falou em alguém desligando o disjuntor, mas a informação de que não houve queda no bairro só chegou no dia seguinte.",
+        "involves": ["bruno", "E3", "E8"],
+        "relevant": true
+      },
+      {
+        "id": "C3",
+        "description": "O cartão de Henrique na vitrine parece incriminá-lo, mas Henrique tinha deixado esse cartão no balcão, com Bruno.",
+        "involves": ["henrique", "bruno", "E7"],
+        "relevant": true
+      },
+      {
+        "id": "C4",
+        "description": "Seu Ventura diz que a vitrine só abre com a chave de Marta, mas o relatório mostra que a fechadura estava quebrada e a trava se solta sem energia.",
+        "involves": ["marta", "E1", "E2"],
+        "relevant": false,
+        "note": "Pista falsa: a chave de Marta não tem importância. O que importa é quem sabia que a vitrine abre sem energia."
+      },
+      {
+        "id": "C5",
+        "description": "Henrique tem motivo e estava ao lado da vitrine às 20h01, mas Seu Ventura afirma que Henrique segurou seu braço durante todo o apagão.",
+        "involves": ["henrique", "E6"],
+        "relevant": false,
+        "note": "Pista falsa: motivo e estar perto da cena depois do crime não provam nada; o álibi elimina Henrique."
+      }
+    ],
+    "hints": [
+      {
+        "level": 1,
+        "text": "A chave da vitrine parece decisiva, mas será mesmo necessária? Releia com atenção o relatório de manutenção."
+      },
+      {
+        "level": 2,
+        "text": "Foi mesmo uma queda de energia do bairro? Se não foi, onde fica o que controla a luz do sebo e quem tem acesso a esse lugar?"
+      },
+      {
+        "level": 3,
+        "text": "Compare o que cada pessoa diz que fazia no escuro com o que as fotos com flash mostram. E repare em quem falou sobre um detalhe antes de ele ser conhecido."
+      }
+    ]
+  }
+}

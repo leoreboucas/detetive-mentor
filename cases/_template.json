@@ -1,0 +1,44 @@
+{
+  "id": "same_as_file_name",
+  "order": 99,
+  "title": "Título do caso",
+  "difficulty": "iniciante | intermediário | difícil | muito difícil | especialista",
+  "public": {
+    "introduction": "O que aconteceu, onde, quando e quem são os suspeitos (sem revelar nada da solução).",
+    "location": "Local",
+    "date": "Data e janela de horário",
+    "suspects": [
+      { "id": "suspeito1", "name": "Nome", "description": "Quem é", "relationship": "Relação com a vítima", "shoe_size": "40" }
+    ],
+    "evidence": [
+      { "id": "E1", "name": "Nome curto", "description": "O que foi encontrado, de forma objetiva" }
+    ],
+    "testimonies": [
+      { "person": "Nome (papel)", "suspect_id": "suspeito1 ou null para testemunhas", "text": "O depoimento, em primeira pessoa" }
+    ],
+    "timeline": [
+      { "time": "21h00", "event": "Evento conhecido" }
+    ]
+  },
+  "secret": {
+    "solution": {
+      "culprit_id": "suspeito1",
+      "culprit_aliases": ["Nome completo", "Sobrenome", "apelidos ou iniciais usados no caso"],
+      "motive": "Por quê",
+      "means": "Como",
+      "opportunity": "Quando e como teve a chance",
+      "key_evidence": ["E1"],
+      "min_key_evidence": 1,
+      "explanation": "Raciocínio completo que leva ao culpado (só é mostrado depois da acusação correta)."
+    },
+    "contradictions": [
+      { "id": "C1", "description": "Depoimento X contradiz evidência Y", "involves": ["suspeito1", "E1"], "relevant": true },
+      { "id": "C2", "description": "Pista falsa", "involves": ["suspeito2"], "relevant": false, "note": "Por que é uma pista falsa" }
+    ],
+    "hints": [
+      { "level": 1, "text": "Dica geral sobre método (onde olhar)" },
+      { "level": 2, "text": "Dica que aponta a relação entre duas informações" },
+      { "level": 3, "text": "Dica quase direta, mas que ainda exige a conclusão do aprendiz" }
+    ]
+  }
+}
