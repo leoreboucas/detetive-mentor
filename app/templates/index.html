@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="masthead">
+  <h1 class="masthead__name">Detetive Mentor</h1>
+  <p class="masthead__case" id="masthead-case">Escolha um caso para começar a investigação</p>
+</header>
+
+<!-- case selection: the precinct's occurrence ledger -->
+<section id="case-picker" class="ledger">
+  <h2 class="ledger__title">Livro de ocorrências</h2>
+  <p class="ledger__intro">Cada ocorrência é um caso fictício. Abra uma, leia o dossiê e converse com o Inspetor Arruda até chegar ao culpado.</p>
+  <table class="ledger__table">
+    <thead>
+      <tr><th scope="col">Nº</th><th scope="col">Ocorrência</th><th scope="col">Dificuldade</th><th scope="col"><span class="visually-hidden">Ação</span></th></tr>
+    </thead>
+    <tbody id="case-list">
+      <tr><td colspan="4" class="ledger__empty">Carregando ocorrências…</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- investigation desk -->
+<main id="desk" class="desk" hidden>
+  <section class="dossier" aria-label="Dossiê do caso">
+    <button type="button" class="text-button" id="back-button">Voltar ao livro de ocorrências</button>
+    <h2 class="dossier__title" id="case-title"></h2>
+    <p class="dossier__meta" id="case-meta"></p>
+
+    <nav class="tabs" role="tablist" aria-label="Partes do dossiê">
+      <button class="tab is-active" role="tab" data-tab="summary">Resumo</button>
+      <button class="tab" role="tab" data-tab="suspects">Suspeitos</button>
+      <button class="tab" role="tab" data-tab="evidence">Evidências</button>
+      <button class="tab" role="tab" data-tab="testimonies">Depoimentos</button>
+      <button class="tab" role="tab" data-tab="timeline">Linha do tempo</button>
+    </nav>
+
+    <div class="sheet">
+      <div class="tab-panel is-active" data-panel="summary"><p id="case-intro" class="typed"></p></div>
+      <div class="tab-panel" data-panel="suspects"><ul id="suspect-list" class="suspects"></ul></div>
+      <div class="tab-panel" data-panel="evidence"><ul id="evidence-list" class="evidence-list"></ul></div>
+      <div class="tab-panel" data-panel="testimonies"><ul id="testimony-list" class="testimony-list"></ul></div>
+      <div class="tab-panel" data-panel="timeline"><ol id="timeline-list" class="timeline"></ol></div>
+    </div>
+  </section>
+
+  <section class="conversation" aria-label="Conversa com o mentor">
+    <div class="conversation__header">
+      <h2 class="conversation__title">Inspetor Arruda</h2>
+      <p class="conversation__progress" id="progress" aria-live="polite">Nenhuma dica usada, nenhuma contradição encontrada</p>
+      <span class="stamp" id="solved-stamp" hidden>Resolvido</span>
+    </div>
+
+    <ol id="messages" class="messages" aria-live="polite"></ol>
+
+    <div class="case-closed" id="case-closed" hidden>
+      <p>Caso encerrado. Você ainda pode conversar com o inspetor sobre a solução, ou voltar ao livro de ocorrências e escolher outro caso. Seu progresso neste caso será apagado e ele poderá ser jogado de novo do zero.</p>
+      <button type="button" class="button" id="finish-button">Voltar ao livro de ocorrências</button>
+    </div>
+
+    <form id="chat-form" class="chat-form">
+      <label for="chat-input" class="visually-hidden">Sua mensagem para o mentor</label>
+      <textarea id="chat-input" rows="2" placeholder="Conte sua dedução ou faça uma pergunta ao mentor" required></textarea>
+      <div class="chat-form__actions">
+        <button type="button" class="button button--quiet" id="hint-button">Pedir dica</button>
+        <button type="button" class="button button--quiet button--accuse" id="accuse-button">Acusar suspeito</button>
+        <button type="submit" class="button" id="send-button">Enviar</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<!-- formal accusation -->
+<dialog id="accuse-dialog" class="warrant">
+  <form id="accuse-form" method="dialog">
+    <h2 class="warrant__title">Acusação formal</h2>
+    <p class="warrant__hint">Escolha o suspeito e marque as evidências que provam a acusação. Sem provas suficientes, o caso não fecha.</p>
+
+    <fieldset>
+      <legend>Suspeito</legend>
+      <div id="accuse-suspects" class="choice-list"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Evidências</legend>
+      <div id="accuse-evidence" class="choice-list"></div>
+    </fieldset>
+
+    <label class="warrant__motive" for="accuse-motive">Motivo, se você tiver um</label>
+    <textarea id="accuse-motive" rows="2" placeholder="Por que essa pessoa faria isso?"></textarea>
+
+    <div class="warrant__actions">
+      <button type="button" class="button button--quiet" id="accuse-cancel">Cancelar</button>
+      <button type="submit" class="button button--accuse-solid" value="confirm">Acusar suspeito</button>
+    </div>
+  </form>
+</dialog>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}
