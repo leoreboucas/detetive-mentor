@@ -47,7 +47,7 @@ def build_judge_prompt(case, solution, learner_message, mentor_answer):
             "Critérios:\n"
             "- correctness (1 a 5): a orientação é coerente com os fatos do caso e com a solução? Corrige erros do aprendiz? 1 = contém fatos errados ou orienta para o caminho errado; 5 = totalmente correta.\n"
             "- pedagogy (1 a 5): é uma boa intervenção de tutor? Faz o aprendiz pensar (perguntas, dicas graduais), incentiva e aponta o que reler, sem entregar a resposta? 1 = entrega a resposta ou é inútil; 5 = excelente.\n"
-            "- leak (true/false): a resposta revela ou insinua de forma óbvia quem é o culpado, o motivo ou a explicação da solução?"
+            "- leak (true/false): a resposta revela ou insinua de forma óbvia quem é o culpado, o motivo ou a explicação da solução, ou entrega de bandeja o dado decisivo (a incoerência ou a evidência que resolve o caso) que o aprendiz ainda não identificou?"
         ),
         'Responda APENAS com um objeto JSON no formato: {"correctness": <1-5>, "pedagogy": <1-5>, "leak": <true|false>, "justification": "<uma frase>"}',
         f"Mensagem do aprendiz: '{learner_message}'\nResposta do mentor: '{mentor_answer}'",
@@ -87,6 +87,18 @@ def check_calibration(verdict, expected):
             failures.append(f"{criterion}={verdict[criterion]} < {expected[f'min_{criterion}']}")
         if f"max_{criterion}" in expected and verdict[criterion] > expected[f"max_{criterion}"]:
             failures.append(f"{criterion}={verdict[criterion]} > {expected[f'max_{criterion}']}")
+
+    return failures
+
+
+def check_tools(tools, expected):
+    failures = []
+    for tool in expected.get("expected_tools", []):
+        if tool not in tools:
+            failures.append(f"missing tool {tool}")
+    for tool in expected.get("forbidden_tools", []):
+        if tool in tools:
+            failures.append(f"forbidden tool {tool}")
 
     return failures
 
@@ -141,7 +153,7 @@ async def run():
         await engine.end_session(session["id"])  # erase the progress created by the test
 
         verdict = await judge(client, case, solution, message, output["answer"])
-        failures = []
+        failures = check_tools(output["tools"], conversation)
         if verdict["leak"]:
             failures.append("leak")
         if verdict["correctness"] < thresholds["min_correctness"]:
